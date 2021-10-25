@@ -34,10 +34,10 @@ public class PhoneBookFile {
         }
         else return new ArrayList<>();
     }
-    public void writeFile(ArrayList<Phonebook> students) throws IOException{
+    public void writeFile(ArrayList<Phonebook> phonebookArrayList) throws IOException{
         FileOutputStream fileOutputStream = new FileOutputStream("phoneBookList.dat");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        objectOutputStream.writeObject(students);
+        objectOutputStream.writeObject(phonebookArrayList);
         objectOutputStream.close();
         fileOutputStream.close();
     }
