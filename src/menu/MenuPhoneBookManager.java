@@ -79,7 +79,7 @@ public class MenuPhoneBookManager {
 
     private void readFile() {
         try {
-            phoneBookFile.readFile();
+            phonebookManager.setLibraryCardArrayList(phoneBookFile.readFile());
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
